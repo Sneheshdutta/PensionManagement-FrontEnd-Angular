@@ -4,11 +4,11 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:9003/',
-  register: 'http://localhost:9003/login/register/',
-  login: 'http://localhost:9003/login/authenticate/',
-  processPension: 'http://localhost:9002/ProcessPension/',
-  pensionDetails: 'http://localhost:9002/ProcessPension/'
+  apiUrl: 'http://cts-pms-lb-1912083700.ap-south-1.elb.amazonaws.com/',
+  register: 'http://cts-pms-lb-1912083700.ap-south-1.elb.amazonaws.com/login/register/',
+  login: 'http://cts-pms-lb-1912083700.ap-south-1.elb.amazonaws.com/login/authenticate/',
+  processPension: 'http://cts-pms-lb-1912083700.ap-south-1.elb.amazonaws.com/ProcessPension/',
+  pensionDetails: 'http://cts-pms-lb-1912083700.ap-south-1.elb.amazonaws.com/ProcessPension/'
 };
 
 /*
