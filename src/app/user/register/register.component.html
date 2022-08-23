@@ -1,12 +1,12 @@
 <div class="container-fluid">
   <router-outlet></router-outlet>
   <br>
-  <h2 align="center">Register Into Pension Management System</h2>
+  <h2 align="center">Register to the Pension Management System</h2>
   <br>
   <div class="container">
     <div class="row">
-      <div class="col-sm">
-        <img src="../../../assets/login.png" class="img-fluid" alt="Responsive image" height="70%" width="70%">
+      <div class="col-sm" align="center">
+        <img src="../../../assets/login.png" class="img-fluid" alt="Responsive image" height="35%" width="35%" >
       </div>
       <div class="col-sm">
         <div style="width: 50vh;">
@@ -21,7 +21,7 @@
                 <input required ngModel name="password" #password="ngModel" type="password" class="form-control"
         placeholder="Password" aria-label="Password" id="password">
             </div>
-            <button [disabled]="!f.valid || clicked" class="btn btn-primary col-12 mt-4 border-100">
+            <button [disabled]="!f.valid || clicked" class="btn btn-info col-12 mt-4 border-100">
                 <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
                 {{registerButtonText}}
             </button>
