@@ -1,0 +1,37 @@
+<div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="padding-left: 10px; padding-right: 10px; ">
+  <a class="navbar-brand" routerLink="dashboard">Pension Management System</a>
+  <div class="" >
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="register" *ngIf="!isLoggedIn()">Register</a>
+    </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="userlogin" *ngIf="!isLoggedIn()">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="isLoggedIn()" routerLink="userlogin" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<br> 
+<router-outlet></router-outlet>
+<br>
+
+<div>
+  <footer class="footer">
+    <div style="  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(34, 31, 31, 0.751);
+    color: aliceblue;
+    text-align: center;" >
+      <span> 2022 © Pension Management System </span>
+    </div>
+  </footer>
+</div>
+</div>

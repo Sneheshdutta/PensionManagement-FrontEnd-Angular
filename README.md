@@ -1,2 +1,1 @@
-# PensionManagement-FrontEnd-Angular
-PensionManagement-FrontEnd-Angular
+# pms-angular
